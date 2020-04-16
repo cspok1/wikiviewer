@@ -64,6 +64,6 @@ function loadDoc() {
 
     
   };
-  xhttp.open("GET", "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exlimit=max&format=json&exsentences=1&exintro=&explaintext=&generator=search&gsrlimit=10&gsrsearch="+document.getElementById("searchbox").value, true);
+  xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exlimit=max&format=json&exsentences=1&exintro=&explaintext=&generator=search&gsrlimit=10&gsrsearch="+document.getElementById("searchbox").value, true);
   xhttp.send();
 }
